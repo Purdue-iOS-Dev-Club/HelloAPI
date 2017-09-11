@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     
     func loadFromAPI(id: Int) {
         
-        guard let url = URL(string: "http://127.0.0.1:5000/pokemon?id=\(id)") else {
+        guard let url = URL(string: "https://helloapi.herokuapp.com/pokemon?id=\(id)") else {
             return
         }
         let session = URLSession(configuration: .default)
